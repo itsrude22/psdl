@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<P18F4550.h>
+void main(void)
+{
+   int fact=1,i,n;
+TRISD=0;
+n=5;
+
+for(i=1;i<=n;i++)
+{
+
+fact=fact*i;
+
+
+}
+PORTD=fact;
+
+}

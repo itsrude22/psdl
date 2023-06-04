@@ -1,0 +1,46 @@
+
+/*****************************************************************
+                          HEADER FILES
+******************************************************************/ 
+#include<P18F4550.h>       
+ 
+/*****************************************************************
+                      FUNCTION DECLARATIONS
+******************************************************************/          
+void Delay_ms(int ms);
+ 
+/*****************************************************************
+                          MAIN FUNCTION
+******************************************************************/
+void main()
+{
+ TRISB = 0X00;            /* PORTB configured as o/p             */
+ 
+ while(1)
+ {
+  PORTB = 0XFF;           /* Make port pins high to turn on LEDs */
+  Delay_ms(500);          /* Delay to keep LEDs ON for sometime  */ 
+  PORTB = 0X00;           /* Make port pins low to turn off LEDs */
+  Delay_ms(500);          /* Delay to keep LEDs OFF for sometime */ 
+ }
+}   
+ 
+/*****************************************************************
+* Function    : Delay_ms                                         *
+*                                                                *
+* Description : Function for delay                               *
+*                                                                *
+* Parameter   : ms - delay in milliseconds                       *
+******************************************************************/
+void Delay_ms(int ms)
+{
+ int i,count;             /* Local variables                     */
+ for(i=1; i<=ms; i++)     /* Loop here to create delay           */
+ {
+  count = 498;
+  while(count!=1)
+  {
+   count--;
+  }
+ }
+}
