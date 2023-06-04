@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+#include <P1874550.h>
+
+void main(void)
+{
+
+Int MUL, DIV;
+
+MUL=0;
+DIV=0;
+
+MUL=0x02 * 0x04; 
+DIV 0x6 / 0x02;
+
+TRISC=0;
+
+PORTD=MUL;
+
+TRISC=O;
+FORTC=DIV;
+
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+#include<P18F4550.h>
+
+void main()
+{
+
+int sum=0;
+
+Sum= OXOA + 0X02;
+
+TRISD=0;
+
+PORTD=sum;
+
+}
